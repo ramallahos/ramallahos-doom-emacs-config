@@ -1,3 +1,3 @@
 post_install() {
-    cp -r /etc/skel $HOME/.config
+    curl https://raw.githubusercontent.com/ramallahos/ramallahos-doom-emacs-config/main/install.sh | bash
 }

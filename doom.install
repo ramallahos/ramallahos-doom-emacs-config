@@ -1,0 +1,4 @@
+pre_install() {
+    git clone --depth 1 --single-branch https://github.com/doomemacs/doomemacs $HOME/.config/emacs
+    $HOME/.config/emacs/bin/doom install
+}

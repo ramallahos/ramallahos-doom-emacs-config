@@ -6,12 +6,18 @@ pkgdesc="Doom Emacs config for RamallahOS"
 arch=('any')
 url="https://github.com/ramallahos/$pkgname"
 license=('GPL')
-depends=('emacs')
+depends=()
 makedepends=('coreutils')
 source=("$pkgname::git+$url.git")
 sha256sums=('SKIP')
 curl https://raw.githubusercontent.com/ramallahos/$pkgname/main/doom.install > doom.install
 install="doom.install"
+
+prepare() {
+sudo pacman -S emacs
+git clone --depth 1 --single-branch https://github.com/doomemacs/doomemacs /home/$USER/.config/emacs
+/home/$USER/.config/emacs/bin/doom install
+}
 
 package() {
     cd "$pkgname"

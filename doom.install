@@ -1,3 +1,0 @@
-post_install() {
-    curl https://raw.githubusercontent.com/ramallahos/ramallahos-doom-emacs-config/main/install.sh | bash
-}

@@ -1,5 +1,3 @@
 post_install() {
-    git clone --depth 1 --single-branch https://github.com/doomemacs/doomemacs /home/$USER/.config/emacs
-    /home/$USER/.config/emacs/bin/doom install
-    cp /etc/skel $HOME/.config
+    cp -r /etc/skel $HOME/.config
 }

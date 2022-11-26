@@ -7,7 +7,7 @@ arch=('any')
 url="https://github.com/ramallahos/$pkgname"
 license=('GPL')
 depends=()
-makedepends=('coreutils')
+makedepends=('coreutils' 'nerd-fonts-jetbrains-mono')
 source=("$pkgname::git+$url.git")
 sha256sums=('SKIP')
 

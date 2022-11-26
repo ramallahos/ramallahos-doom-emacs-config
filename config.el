@@ -9,9 +9,9 @@
 
 (setq display-line-numbers-type t)
 
-(setq doom-font (font-spec :family "FiraCode Nerd Font Mono" :size 15)
-        doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font Mono" :size 15)
-        doom-big-font (font-spec :family "FiraCode Nerd Font Mono" :size 24))
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font Mono" :size 15)
+        doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font Mono" :size 15)
+        doom-big-font (font-spec :family "JetBrainsMono Nerd Font Mono" :size 24))
 
 (setq org-pretty-entities t)
 
